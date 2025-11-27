@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Redirect</title> 
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <a href="index.html">Home</a>
+    <a class="active" href="weather.html">Weather</a>
+    <a href="info.html">Extra Info</a>
+</nav>
+
+<header>Weather Redirect</header>
+
+<div class="container">
+    <h1>Check Weather on BBC Weather</h1>
+    <p>Enter a city name and you will be redirected to the BBC Weather page for it.</p>
+
+    <input type="text" id="city" placeholder="e.g. London"> <!--user input -->
+    <button onclick="goToBBC()">Go to BBC Weather</button> <!--javascript function trigger-->
+
+</div>
+
+<script> 
+function goToBBC() {  //function that redirects user to BBC Weather
+    const city = document.getElementById('city').value.trim(); //get the city typed by the user
+    if (!city) return; //stops the program if input field is empty
+
+    const url = `https://www.bbc.co.uk/weather?q=${encodeURIComponent(city)}`; //builds the BBC weather search URL with the city
+    window.location.href = url; //URL browser redirect
+}
+</script>
+
+</body>
+</html>
