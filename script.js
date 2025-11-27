@@ -19,3 +19,14 @@ function goToBBC() {
     const url = `https://www.bbc.co.uk/weather?q=${encodeURIComponent(city)}`;
     window.location.href = url;
 }
+//clock nav bar feature
+function updateClock() {
+    const clock = document.getElementById("clock");
+    if (!clock) return;
+
+    const now = new Date();
+    clock.textContent =
+        now.toLocaleDateString() + " " + now.toLocaleTimeString();
+}
+setInterval(updateClock, 1000);
+updateClock();

@@ -12,9 +12,10 @@
     <a href="index.html">Home</a>
     <a class="active" href="weather.html">Weather</a>
     <a href="info.html">Extra Info</a>
+    <span id="clock" class="clock"></span>
 </nav>
 
-<header>Weather Redirect</header>
+<header>Weather Explorer</header>
 
 <div class="container">
     <h1>Check Weather on BBC Weather</h1>
@@ -22,6 +23,21 @@
 
     <input type="text" id="city" placeholder="e.g. London"> <!--user input -->
     <button onclick="goToBBC()">Go to BBC Weather</button> <!--javascript function trigger-->
+    
+    <h2 style="margin-top: 30px;">Other Useful Weather Links</h2>
+
+    <button onclick="window.location.href='https://www.metoffice.gov.uk';">
+         Met Office (UK)
+    </button>
+
+    <button onclick="window.location.href='https://www.accuweather.com';">
+         AccuWeather
+    </button>
+
+    <button onclick="window.location.href='https://https://weather.com/en-GB/weather/today';">
+         The Weather Channel
+    </button>
+    
     <img class="main-image" src="weather_image4.jpg" alt="Weather Image">
 </div>
 <script src="script.js"></script>

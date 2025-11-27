@@ -108,3 +108,12 @@ button:hover {
     margin-top: 20px;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+
+/* ===== CLOCK STYLING ===== */
+.clock {
+    margin-left: auto;          /* pushes clock to right side */
+    color: white;               /* make text white */
+    font-weight: bold;          /* make text bold */
+    font-size: 1.1rem;          /* slightly larger */
+    padding-right: 20px;        /* spacing from right edge */
+}
