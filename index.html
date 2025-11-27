@@ -4,7 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Explorer - Home</title> <!--Title of site -->
-    <link rel="stylesheet" href="styles.css">  <!--link to style.css-->
+    <link rel="stylesheet" href="style.css">  <!--link to style.css-->
+    
+    <style>
+        /* Slideshow container */
+        .slideshow {
+            width: 100%;
+            max-width: 900px;
+            height: 450px;
+            margin: 20px auto;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        }
+
+        .slideshow img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 1.5s ease-in-out;
+        }
+
+        .slideshow img.active {
+            opacity: 1;
+        }
+    </style>
 </head>
 <body>
 
@@ -20,9 +49,14 @@
 <div class="container">
     <h1>Welcome to Weather Explorer</h1>  <!--main page heading -->
     <p>This website lets you quickly jump to weather information using BBC Weather.</p>
-
-
+    <div class="slideshow">
+        <img src="weather_image.jpg" class="active" alt="Weather Slide 1">
+        <img src="weather_image3.jpg" alt="Weather Slide 2">
+        <img src="weather_image1.jpg" alt="Weather Slide 3">
+        <img src="weather_image2.jpg" alt="Weather Slide 4">
+    </div>
 </div>
+<script src="script.js"></script>
 
 </body>
 </html>
