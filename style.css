@@ -89,15 +89,6 @@ button:hover {
     background: #00356e;
 }
 
-/* ===== INTRO PAGE IMAGE ===== */
-.hero-image {
-    width: 100%;
-    max-width: 900px;
-    height: auto;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
 
 /* ===== WEATHER PAGE IMAGE ===== */
 .main-image {
@@ -111,9 +102,24 @@ button:hover {
 
 /* ===== CLOCK STYLING ===== */
 .clock {
-    margin-left: auto;          /* pushes clock to right side */
-    color: white;               /* make text white */
-    font-weight: bold;          /* make text bold */
-    font-size: 1.1rem;          /* slightly larger */
-    padding-right: 20px;        /* spacing from right edge */
+    margin-left: auto;        
+    color: white;               
+    font-weight: bold;          
+    font-size: 1.1rem;        
+    padding-right: 20px;       
+}
+
+.logout-btn {
+    margin-left: 20px;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #003366;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.logout-btn:hover {
+    background-color: #e3e3e3;
 }

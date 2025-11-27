@@ -12,7 +12,9 @@
     <a href="index.html">Home</a>
     <a class="active" href="weather.html">Weather</a>
     <a href="info.html">Extra Info</a>
+    <a href="login.html">Login</a>
     <span id="clock" class="clock"></span>
+    <button id="logoutBtn" class="logout-btn" style="display:none;">Logout</button>
 </nav>
 
 <header>Weather Explorer</header>
@@ -20,8 +22,11 @@
 <div class="container">
     <h1>Check Weather on BBC Weather</h1>
     <p>Enter a city name and you will be redirected to the BBC Weather page for it.</p>
-
+    <h2>Your Favourite Cities</h2>
+    <div id="favouritesList"></div>
+    <h2>Add a New Favourite City</h2>
     <input type="text" id="city" placeholder="e.g. London"> <!--user input -->
+    <button onclick="saveFavourite()">Save Favourite</button>
     <button onclick="goToBBC()">Go to BBC Weather</button> <!--javascript function trigger-->
     
     <h2 style="margin-top: 30px;">Other Useful Weather Links</h2>
@@ -38,6 +43,7 @@
          The Weather Channel
     </button>
     
+
     <img class="main-image" src="weather_image4.jpg" alt="Weather Image">
 </div>
 <script src="script.js"></script>
